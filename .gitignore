@@ -1,0 +1,31 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.pb
+*.dcp
+*.bit
+*.ltx
+*.xsa
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/utils_1/
+*.gen/
+*.xpr.bak
+.Xil/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Colab / Jupyter
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

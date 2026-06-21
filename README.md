@@ -683,15 +683,3 @@ out_scale = 1/127
 - 由 Verilog `$readmemb` 讀取進 BRAM ROM
 - 路徑：`Final/weights/`
 
----
-
-## 已知問題與改善建議
-
-| 問題 | 位置 | 說明 |
-|------|------|------|
-| 缺少劫（Ko）規則 | rule_engine.sv | 人類玩家可以違反劫規則 |
-| 缺少貼目（Komi） | territory_counter.sv | 白棋未獲得 +7 分貼目，終局計分偏差 |
-| UART 無逾時保護 | packet_parser.sv | 雜訊觸發錯誤標頭後 FSM 可能永久卡死 |
-| 分數未顯示 | vga_controller.sv | p1_score / p2_score 傳入但畫面不顯示數字 |
-| BN 未完全融合 | train.py | policy_head / value_head 的 BN 未融合，FPGA 端缺少 BN 運算 |
-| Pass 落子處理 | pcaitest.py | 無合法落子時回傳 (4,4) 而非正確 Pass 訊號 |
